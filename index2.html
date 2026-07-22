@@ -1,0 +1,57 @@
+<html><head>
+<meta charset="UTF-8">
+<style>
+  html, body { margin: 0; padding: 0; background-color: #1a1a1a; }
+
+  .bg-layer { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+  .bg-layer .blob { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.28; }
+  .bg-layer .blob1 { width: 320px; height: 320px; background: #00a8ff; top: -60px; left: -80px; animation: floatA 14s ease-in-out infinite; }
+  .bg-layer .blob2 { width: 260px; height: 260px; background: #7b2ff7; bottom: -40px; right: -60px; animation: floatB 16s ease-in-out infinite; }
+  .bg-layer .blob3 { width: 200px; height: 200px; background: #00ffc8; top: 40%; left: 50%; animation: floatC 18s ease-in-out infinite; }
+  @keyframes floatA { 0%,100% { transform: translate(0,0); } 50% { transform: translate(40px,30px); } }
+  @keyframes floatB { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-30px,-40px); } }
+  @keyframes floatC { 0%,100% { transform: translate(-50%,0); } 50% { transform: translate(-50%,-30px); } }
+
+  .content-layer { position: relative; z-index: 1; }
+</style>
+</head>
+<body style="background-color: #1a1a1a; color: #e0e0e0; font-family: sans-serif; padding: 20px; text-align: center;">
+
+<div class="bg-layer">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+</div>
+
+<div class="content-layer">
+
+  <h1 style="color: #00a8ff; font-size: 28px;"> รายการทักษะที่ต้องการพัฒนา </h1>
+  <hr style="border: 1px solid #333;">
+
+  <h2 style="color: #00a8ff;"> ทักษะที่ต้องการพัฒนา (การประกอบคอม) </h2>
+  <p>1. การเลือกจัดสเปกคอมพิวเตอร์ให้คุ้มค่าและเข้ากันได้ดี (CPU, GPU, RAM, Mainboard)</p>
+  <p>2. การจัดสายไฟ (Cable Management) ให้เป็นระเบียบและระบายความร้อนได้ดี</p>
+  <p>3. การติดตั้งและเลือกใช้ระบบระบายความร้อน (ซิงค์ลม และชุดน้ำปิด)</p>
+  <p>4. การลงระบบปฏิบัติการ (OS) Windows/Linux และการตั้งค่า BIOS</p>
+  <p>5. การตรวจเช็คและแก้ปัญหาเบื้องต้น (Troubleshooting) เมื่อเปิดคอมไม่ติด</p>
+  <hr style="border: 1px solid #333;">
+
+  <h2 style="color: #00a8ff;"> ลำดับอาชีพที่อยากทำ </h2>
+  <p><strong>อันดับ 1 :</strong> ช่างเทคนิคคอมพิวเตอร์ / นักประกอบคอมมืออาชีพ 🖥️</p>
+  <p><strong>อันดับ 2 :</strong> เจ้าหน้าที่ดูแลระบบเครือข่ายและเซิร์ฟเวอร์ (System Engineer) 🌐</p>
+  <p><strong>อันดับ 3 :</strong> นักทดสอบระบบความปลอดภัยคอมพิวเตอร์ (Cybersecurity) 🔒</p>
+  <hr style="border: 1px solid #333;">
+
+  <p style="margin-top: 20px;">
+    <button onclick="document.location='index.html'" style="background-color: #444444; color: #ffffff; border: 1px solid #555555; padding: 8px 18px; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; margin: 5px;">
+      ย้อนกลับ
+    </button>
+
+    <button onclick="document.location='index3.html'" style="background-color: #00a8ff; color: #ffffff; border: none; padding: 8px 18px; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; margin: 5px;">
+      ถัดไป (หน้า 3)
+    </button>
+  </p>
+
+</div>
+
+</body></html>
